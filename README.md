@@ -4,6 +4,7 @@ Cloud hosted neural network trained on the MNIST database for recognizing handwr
 ### Goals 
 
 - [ ] Store the MNIST database in the cloud
+- [ ] Draft prototypes of individual components that represent necessary concepts for completion of project
 - [ ] Define and deploy a neural net to the cloud
 - [ ] Train it to recognize handwritten digits using the MNIST database
 - [ ] Create a site that allows a user to upload a photo of handwritten numbers and have neural net return correct values
