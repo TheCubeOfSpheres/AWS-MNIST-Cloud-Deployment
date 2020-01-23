@@ -16,17 +16,11 @@ class Perceptron {
 		for(var i = 0; i < this.inputs.length; i++) {
 			initialOutputVal = (this.inputs[i] * this.weights[i]) + initialOutputVal;
 		}
-		var output = initialOutputVal + this.bias;
-		console.log(output)
+		var z = initialOutputVal + this.bias;
+		var output;
+		z <= 0 ? output = 0 : output = 1 
+		return output;
 	}
 }
 
-var testPerceptron = new Perceptron([0, 0], [-2, -2], 3);
-testPerceptron.runPerceptron();
-testPerceptron.setInputs([0, 1]);
-testPerceptron.runPerceptron();
-testPerceptron.setInputs([1, 0]);
-testPerceptron.runPerceptron();
-testPerceptron.setInputs([1, 1]);
-testPerceptron.runPerceptron();
 
